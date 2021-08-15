@@ -4,7 +4,7 @@
     <title>Form Sample for practice</title>
   </head>
   <body>
-    <form action="post" action="check.php">
+    <form method="post" action="check.php">
       <table border="1">
         <tr>
           <td>Name</td>

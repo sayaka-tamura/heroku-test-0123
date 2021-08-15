@@ -11,7 +11,7 @@
       $message = $_POST["message"];
     ?>
     <?php print_r($_POST); ?>
-    <form action="post" action="submit.php">
+    <form method="post" action="submit.php">
       <table border="1">
         <tr>
           <td>Name</td>
