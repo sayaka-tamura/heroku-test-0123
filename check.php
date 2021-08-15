@@ -4,25 +4,30 @@
     <title>Form Sample for practice</title>
   </head>
   <body>
-    <form action="post" action="check.php">
+    <p>Please Check Input Contents</p>
+    <?php
+      $uname = $_POST["uname"];
+      $email = $_POST["email"];
+      $message = $_POST["message"];
+    ?>
+    <?php print_r($_POST); ?>
+    <form action="post" action="submit.php">
       <table border="1">
         <tr>
           <td>Name</td>
-          <td><input type="text" name="uname" size="30"></td>
+          <td><?php echo $uname; ?></td>
         </tr>
         <tr>
           <td>Email Address</td>
-          <td><input type="text" name="email" size="30"></td>
+          <td><?php echo $emal; ?></td>
         </tr>
         <tr>
           <td>Message</td>
-          <td>
-            <textarea name="message" cols="30" rows="5"></textarea>
-          </td>
+          <td><?php echo nl2br($message); ?></td>
         </tr>
         <tr>
           <td colspan="2">
-            <input type="submit" name="sub1" value="Confirm">
+            <input type="submit" name="sub1" value="Submit">
           </td>
         </tr>
       </table>
