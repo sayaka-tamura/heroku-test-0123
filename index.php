@@ -1,5 +1,6 @@
 <?php
   $message = "Hello World!!!!";
   $message = "Good evening!";
-  echo $message;
+  $name = "田中";
+  echo "{$message} + {$name} さん!";
 ?>
