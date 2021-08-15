@@ -47,7 +47,7 @@
       $_SESSION["email"] = $email;
       $_SESSION["message"] = $message;
 
-      var_dump($_SESSION);
+      // var_dump($_SESSION);
     ?>
     
     <form method="post" action="submit.php">

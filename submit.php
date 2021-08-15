@@ -6,7 +6,7 @@
   // Session Start
   session_start();
   
-  var_dump($_SESSION);
+  // var_dump($_SESSION);
 ?>
 
 <html>
@@ -18,13 +18,17 @@
     <h1>Mail Form_3.Submit</h1>
     <?php
       // Sanitize
-      function h($a) {
-        return htmlspecialchars($a, ENT_QUOTES, 'UTF-8');
+      function h($str) {
+        return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
       }
 
-      $uname = h($_SESSION["uname"]);
-      $email = h($_SESSION["email"]);
-      $message = h($_SESSION["message"]);
+      $uname = $_SESSION["uname"];
+      $email = $_SESSION["email"];
+      $message = $_SESSION["message"];
+
+      $uname = h($uname);
+      $email = h($email);
+      $message = h($message);
 
       // メール本文の組み立て
       $to = "bbb@gmail.com";
