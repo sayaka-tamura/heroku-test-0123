@@ -5,15 +5,17 @@
   }
   // Session Start
   session_start();
+
+  var_dump($_POST);
 ?>
 
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Mail Form</title>
+    <title>Mail Form_2.Confirm</title>
   </head>
+  
   <body>
-    <!-- <?php var_dump($_POST); ?> -->
     <p>Please Check Input Contents</p>
     <?php
       if(empty($_POST["uname"])){
@@ -41,6 +43,7 @@
       $_SESSION["email"] = $email;
       $_SESSION["message"] = $message;
     ?>
+    
     <form method="post" action="submit.php">
       <table border="1">
         <tr>

@@ -1,14 +1,29 @@
+<?php
+  if(empty($_POST)){
+    echo "Ended this process";
+    exit;
+  }
+  // Session Start
+  session_start();
+  
+  var_dump($_SESSION);
+?>
+
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Mail Form</title>
+    <title>Mail Form_3.Submit</title>
   </head>
   <body>
-    <!-- <?php var_dump($_POST); ?> -->
     <?php
-      $uname = $_POST["uname"];
-      $email = $_POST["email"];
-      $message = $_POST["message"];
+      // Sanitize
+      function h($a) {
+        return htmlspecialchars($a, ENT_QUOTES, 'UTF-8');
+      }
+
+      $uname = h($_SESSION["uname"]);
+      $email = h($_SESSION["email"]);
+      $message = h($_SESSION["message"]);
 
       // メール本文の組み立て
       $to = "bbb@gmail.com";
@@ -25,20 +40,30 @@
       Message: {$message}
       ----------------------------------------------
       EOM;
+
+      // メール送信の実行
+      $rc = mb_send_mail($to, $title, $body, $ext_header);
+      
+      if(!$rc){
+        exit;
+      } else {
+        $_SESSION = NULL;
+      }
     ?>
+    <!-- 処理結果を表示 -->
     <p>Mail has sent</p>
     <table border="1">
       <tr>
         <td>Name</td>
-        <td><?php echo $uname; ?></td>
+        <td　width="300"><?php echo $uname; ?></td>
       </tr>
       <tr>
         <td>Email Address</td>
-        <td><?php echo $email; ?></td>
+        <td　width="300"<?php echo $email; ?></td>
       </tr>
       <tr>
         <td>Message</td>
-        <td><?php echo nl2br($message); ?></td>
+        <td　width="300"><?php echo nl2br($message); ?></td>
       </tr>
     </table>
   </body>
