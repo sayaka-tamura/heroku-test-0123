@@ -39,6 +39,12 @@
       $email = $_POST["email"];
       $message = $_POST["message"];
 
+      // Email address validation
+      if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+        echo "This is not email.";
+        $email=null;
+      }
+      
       $uname = h($uname);
       $email = h($email);
       $message = h($message);
