@@ -4,6 +4,7 @@
     <title>Mail Form_1.Input</title>
   </head>
   <body>
+    <h1>Mail Form_1.Input</h1>
     <form method="post" action="check.php">
       <table border="1">
         <tr>

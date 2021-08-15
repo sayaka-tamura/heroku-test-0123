@@ -12,9 +12,10 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Mail Form_3.Submit</title>
+    <title>Mail Form</title>
   </head>
   <body>
+    <h1>Mail Form_3.Submit</h1>
     <?php
       // Sanitize
       function h($a) {
