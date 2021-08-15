@@ -6,7 +6,6 @@
   // Session Start
   session_start();
 
-  var_dump($_POST);
 ?>
 
 <html>
@@ -32,21 +31,22 @@
         exit;
       }
 
-      function h($a) {
-        return htmlspecialchars($a, ENT_QUOTES, 'UTF-8');
+      function h($str) {
+        return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
       }
 
-      // $uname = h($_POST["uname"]);
-      // $email = h($_POST["email"]);
-      // $message = h($_POST["message"]);
+      echo htmlspecialchars('&', ENT_QUOTES, 'UTF-8');
 
-      $uname = htmlspecialchars($_POST["uname"], ENT_QUOTES, 'UTF-8');
-      $email = htmlspecialchars($_POST["email"], ENT_QUOTES, 'UTF-8');
-      $message = htmlspecialchars($_POST["message"], ENT_QUOTES, 'UTF-8');
+      $uname = h($_POST["uname"]);
+      $email = h($_POST["email"]);
+      $message = $_POST["message"];
+      $message = h($message);
 
       $_SESSION["uname"] = $uname;
       $_SESSION["email"] = $email;
       $_SESSION["message"] = $message;
+
+      
     ?>
     
     <form method="post" action="submit.php">
