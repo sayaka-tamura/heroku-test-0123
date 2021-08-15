@@ -10,7 +10,7 @@
       $email = $_POST["email"];
       $message = $_POST["message"];
     ?>
-    <?php print_r($_POST); ?>
+    <?php var_dump($_POST); ?>
     <form method="post" action="submit.php">
       <table border="1">
         <tr>
