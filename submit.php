@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Form Sample for practice</title>
+    <title>Mail Form</title>
   </head>
   <body>
     <!-- <?php var_dump($_POST); ?> -->
@@ -34,7 +34,7 @@
       </tr>
       <tr>
         <td>Email Address</td>
-        <td><?php echo $emal; ?></td>
+        <td><?php echo $email; ?></td>
       </tr>
       <tr>
         <td>Message</td>
