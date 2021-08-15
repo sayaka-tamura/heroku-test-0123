@@ -15,5 +15,9 @@
   $b = round(123.456, 1);
   echo $b;
 
+  while(checkdate(2, $d, 2021)){
+    echo $d."<br>";
+    $d++;
+  }
 
 ?>
