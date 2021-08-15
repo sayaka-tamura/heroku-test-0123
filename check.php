@@ -35,18 +35,19 @@
         return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
       }
 
-      echo htmlspecialchars('&', ENT_QUOTES, 'UTF-8');
-
-      $uname = h($_POST["uname"]);
-      $email = h($_POST["email"]);
+      $uname = $_POST["uname"];
+      $email = $_POST["email"];
       $message = $_POST["message"];
+
+      $uname = h($uname);
+      $email = h($email);
       $message = h($message);
 
       $_SESSION["uname"] = $uname;
       $_SESSION["email"] = $email;
       $_SESSION["message"] = $message;
 
-      
+      var_dump($_SESSION);
     ?>
     
     <form method="post" action="submit.php">
