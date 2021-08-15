@@ -17,22 +17,7 @@
   <body>
     <h1>Mail Form_3.Submit</h1>
         <!-- 処理結果を表示 -->
-    <p>Mail has sent</p>
-    <table border="1">
-      <tr>
-        <td>Name</td>
-        <td　width="300"><?php echo $uname; ?></td>
-      </tr>
-      <tr>
-        <td>Email Address</td>
-        <td　width="300"<?php echo $email; ?></td>
-      </tr>
-      <tr>
-        <td>Message</td>
-        <td　width="300"><?php echo nl2br($message); ?></td>
-      </tr>
-    </table>
-    
+
     <?php
       // Sanitize
       function h($str) {
@@ -67,10 +52,26 @@
       $rc = mb_send_mail($to, $title, $body, $ext_header);
       
       if(!$rc){
+        echo "This mail has not been sent because of something wrong";
         exit;
       } else {
         $_SESSION = NULL;
       }
     ?>
+    <p>Mail has sent</p>
+    <table border="1">
+      <tr>
+        <td>Name</td>
+        <td　width="300"><?php echo $uname; ?></td>
+      </tr>
+      <tr>
+        <td>Email Address</td>
+        <td　width="300"<?php echo $email; ?></td>
+      </tr>
+      <tr>
+        <td>Message</td>
+        <td　width="300"><?php echo nl2br($message); ?></td>
+      </tr>
+    </table>
   </body>
 </html>
