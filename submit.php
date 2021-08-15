@@ -6,7 +6,7 @@
   // Session Start
   session_start();
   
-  // var_dump($_SESSION);
+  var_dump($_SESSION);
 ?>
 
 <html>
@@ -32,6 +32,10 @@
       $email = h($email);
       $message = h($message);
 
+      var_dump($uname);
+      var_dump($email);
+      var_dump($message);
+
       // メール本文の組み立て
       $to = "bbb@gmail.com";
       $title = "■ From Mail Foam";
@@ -55,6 +59,7 @@
         echo "This mail has not been sent because of something wrong";
         exit;
       } else {
+        echo "Hello";
         $_SESSION = NULL;
       }
     ?>
