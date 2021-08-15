@@ -19,7 +19,7 @@
         </tr>
         <tr>
           <td>Email Address</td>
-          <td><?php echo $emal; ?></td>
+          <td><?php echo $email; ?></td>
         </tr>
         <tr>
           <td>Message</td>
@@ -31,6 +31,10 @@
           </td>
         </tr>
       </table>
+      <!-- hidden field -->
+      <input type="hidden" name="uname" value="<?php echo $uname ?>">
+      <input type="hidden" name="email" value="<?php echo $email ?>">
+      <input type="hidden" name="message" value="<?php echo $message ?>">
     </form>
   </body>
 </html>
