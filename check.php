@@ -43,6 +43,7 @@
       if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
         echo "This is not email.";
         $email=null;
+        exit;
       }
       
       $uname = h($uname);
