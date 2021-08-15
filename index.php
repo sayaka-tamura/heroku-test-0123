@@ -16,7 +16,7 @@
   echo $b;
 
   while(checkdate(2, $d, 2021)){
-    echo $d."<br>";
+    echo $d."<br/>";
     $d++;
   }
 
