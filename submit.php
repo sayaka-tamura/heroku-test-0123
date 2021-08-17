@@ -6,7 +6,7 @@
   // Session Start
   session_start();
   
-  var_dump($_SESSION);
+  // var_dump($_SESSION);
 ?>
 
 <html>
@@ -32,9 +32,9 @@
       $email = h($email);
       $message = h($message);
 
-      var_dump($uname);
-      var_dump($email);
-      var_dump($message);
+      // var_dump($uname);
+      // var_dump($email);
+      // var_dump($message);
 
       // メール本文の組み立て
       $to = "bbb@gmail.com";
@@ -63,6 +63,7 @@
         $_SESSION = NULL;
       }
     ?>
+    
     <p>Mail has sent</p>
     <table border="1">
       <tr>
