@@ -13,9 +13,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Mail Form</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Mail Form_3.Submit</h1>
+    <h1>Mail Form</h1>
         <!-- 処理結果を表示 -->
 
     <?php
@@ -31,10 +32,6 @@
       $uname = h($uname);
       $email = h($email);
       $message = h($message);
-
-      // var_dump($uname);
-      // var_dump($email);
-      // var_dump($message);
 
       // メール本文の組み立て
       $to = "bbb@gmail.com";
