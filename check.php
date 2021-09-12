@@ -18,7 +18,7 @@
   // 配列かどうかのチェック
   if(is_array($_POST)){
     //$var が配列の場合、checkInput()関数をそれぞれの要素について呼び出す
-    // return array_map('checkInput', $_POST);
+    return array_map('checkInput', $_POST);
   } else {
     //NULLバイト攻撃（文字コードの値が0の文字を使いプログラムを誤作動させる攻撃）対策
     /*
