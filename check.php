@@ -18,21 +18,26 @@
   // 配列かどうかのチェック
   if(is_array($_POST)){
     //$var が配列の場合、checkInput()関数をそれぞれの要素について呼び出す
-    return array_map('checkInput', $_POST);
+    // return array_map('checkInput', $_POST);
   } else {
     //NULLバイト攻撃（文字コードの値が0の文字を使いプログラムを誤作動させる攻撃）対策
+    /*
     if(preg_match('/\0/', $_POST)){  
       die('不正な入力です。'); // die(): メッセージを出力し、現在のスクリプトを終了する
     }
+    */
     //文字エンコードのチェック
+    /*
     if(!mb_check_encoding($_POST, 'UTF-8')){ 
       die('不正な入力です。');
     }
+    */
     //改行以外の制御文字及び最大文字数のチェック
+    /*
     if(preg_match('/\A[\r\n\t[:^cntrl:]]{0,100}\z/u', $_POST) === 0){  
       die('不正な入力です。最大文字数は100文字です。また、制御文字は使用できません。');
     }
-    // return $_POST;
+    */
   }
 
 ?>
