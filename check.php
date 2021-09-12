@@ -10,15 +10,12 @@
   }
   // Session Start
   session_start();
-
   
   require 'validation.php';  //関数のファイルの読み込み
 
-/*
   //POSTされたデータをチェック
   $_POST = checkInput($_POST);
 
-  */
 ?>
 
 
