@@ -32,7 +32,7 @@
     if(preg_match('/\A[\r\n\t[:^cntrl:]]{0,100}\z/u', $_POST) === 0){  
       die('不正な入力です。最大文字数は100文字です。また、制御文字は使用できません。');
     }
-    return $_POST;
+    // return $_POST;
   }
 
 ?>
