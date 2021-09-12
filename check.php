@@ -1,5 +1,6 @@
-/*
+
 <?php
+/*
   $h = $_SERVER['HTTP_HOST'];
   $r = $_SERVER['HTTP_REFERER'];
 
@@ -16,8 +17,9 @@
   $_POST = checkInput($_POST);
   
   var_dump($_POST);
-?>
 */
+?>
+
 
 <html>
   <head>
@@ -30,10 +32,15 @@
     <h1>Mail Form</h1>
     <p>Please confirm your input</p>
     
+    
     <?php
+      /*
       // 入力エラーチェック
       $temp_array = errorCheck($_POST); 
+      */
     ?>
+    
+
     <!--
     <form method="post" action="submit.php">
       <table border="1">
