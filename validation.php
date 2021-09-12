@@ -1,6 +1,6 @@
  <?php
-  function checkInput($var){
-    /*
+ /*
+  function checkInput($var){ 
     // 配列かどうかのチェック
     if(is_array($var)){
       //$var が配列の場合、checkInput()関数をそれぞれの要素について呼び出す
@@ -20,8 +20,9 @@
       }
       return $var;
     }
-    */
+    
   }
+*/
 
   //エスケープ処理の関数
   function h($str){
