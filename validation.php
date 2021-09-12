@@ -38,7 +38,6 @@
   }
 
   function errorCheck($var){
-    /*
       //POSTされたデータを変数に格納
       //最初は入力データがないのでこの初期化をしないとエラーとなる
       $uname = isset($_POST['uname']) ? $_POST['uname'] : NULL;
@@ -90,7 +89,6 @@
       }
 
       return $temp_array;
-      */
   }
 
 ?>

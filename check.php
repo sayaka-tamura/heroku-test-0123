@@ -17,7 +17,6 @@
 
 ?>
 
-
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -30,10 +29,8 @@
     <p>Please confirm your input</p>
     
     <?php
-      /*
       // 入力エラーチェック
       $temp_array = errorCheck($_POST); 
-      */
     ?>
     
     <form method="post" action="submit.php">
