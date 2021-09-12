@@ -11,10 +11,10 @@
   // Session Start
   session_start();
 
-  var_dump($_POST);
-  /*
+  
   require 'validation.php';  //関数のファイルの読み込み
 
+/*
   //POSTされたデータをチェック
   $_POST = checkInput($_POST);
 
