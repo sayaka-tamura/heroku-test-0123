@@ -22,11 +22,9 @@
       return array_map('checkInput', $var);
     } else {
       //NULLバイト攻撃（文字コードの値が0の文字を使いプログラムを誤作動させる攻撃）対策
-      /*
       if(preg_match('/\0/', $var)){  
         die('不正な入力です。'); // die(): メッセージを出力し、現在のスクリプトを終了する
       }
-      */
       //文字エンコードのチェック
       /*
       if(!mb_check_encoding($var, 'UTF-8')){ 
