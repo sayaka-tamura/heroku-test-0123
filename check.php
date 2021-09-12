@@ -30,7 +30,7 @@
       // 入力エラーチェック
       $temp_array = errorCheck($_POST); 
     ?>
-    
+    <!--
     <form method="post" action="submit.php">
       <table border="1">
         <tr>
@@ -60,7 +60,7 @@
           </td>
         </tr>
       </table>
-      
+    -->
     </form>
   </body>
 </html>
