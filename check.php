@@ -13,7 +13,7 @@
   require 'validation.php';  //関数のファイルの読み込み
 
   //POSTされたデータをチェック
-  // $_POST = checkInput($_POST);
+  $_POST = checkInput($_POST);
 
   function checkInput($var){
     // 配列かどうかのチェック
