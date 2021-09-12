@@ -15,7 +15,7 @@
   //POSTされたデータをチェック
   $_POST = checkInput($_POST);
 
-  function checkInput($var){
+  function checkInput($_POST){
     // 配列かどうかのチェック
     if(is_array($_POST)){
       //$var が配列の場合、checkInput()関数をそれぞれの要素について呼び出す
