@@ -1,11 +1,3 @@
-<?php
-  $h = $_SERVER['HTTP_HOST'];
-  $r = $_SERVER['HTTP_REFERER'];
-
-  var_dump($h);
-  var_dump($r);
-?>
-
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">

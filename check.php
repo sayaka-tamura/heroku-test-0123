@@ -1,6 +1,6 @@
 
 <?php
-/*
+
   $h = $_SERVER['HTTP_HOST'];
   $r = $_SERVER['HTTP_REFERER'];
 
@@ -10,14 +10,15 @@
   }
   // Session Start
   session_start();
-  
+
+  var_dump($_POST);
+  /*
   require 'validation.php';  //関数のファイルの読み込み
 
   //POSTされたデータをチェック
   $_POST = checkInput($_POST);
-  
-  var_dump($_POST);
-*/
+
+  */
 ?>
 
 
@@ -31,7 +32,6 @@
   <body>
     <h1>Mail Form</h1>
     <p>Please confirm your input</p>
-    
     
     <?php
       /*
