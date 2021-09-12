@@ -1,3 +1,4 @@
+/*
 <?php
   $h = $_SERVER['HTTP_HOST'];
   $r = $_SERVER['HTTP_REFERER'];
@@ -16,6 +17,7 @@
   
   var_dump($_POST);
 ?>
+*/
 
 <html>
   <head>
