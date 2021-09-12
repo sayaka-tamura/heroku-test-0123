@@ -13,6 +13,8 @@
 
   //POSTされたデータをチェック
   $_POST = checkInput($_POST);
+  
+  var_dump($_POST);
 ?>
 
 <html>
