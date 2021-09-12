@@ -40,8 +40,6 @@
       */
     ?>
     
-
-    <!--
     <form method="post" action="submit.php">
       <table border="1">
         <tr>
@@ -71,7 +69,6 @@
           </td>
         </tr>
       </table>
-    -->
     </form>
   </body>
 </html>
