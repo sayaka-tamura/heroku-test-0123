@@ -1,0 +1,8 @@
+{
+    "name": "arccy/heroku-test-0123",
+    "description": "submit form made by php",
+    "type": "project",
+    "require": {
+        "ext-mbstring": "*"
+    }
+}
